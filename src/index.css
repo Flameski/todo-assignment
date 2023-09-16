@@ -1,6 +1,7 @@
 body {
   padding: 0px;
   margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .mainWindow {
@@ -16,11 +17,14 @@ body {
   border: 1px solid blue;
 }
 
-.add-todo {
-  margin: 0 0 3em 3em;
-  border: 1px solid green;
-  grid-row-start: 2;
-  grid-row-end: 3;
+.todos-list>h2 {
+  margin: 1em;
+}
+
+.todo-remove {
+  padding: 1em;
+  width: 20%;
+  text-align: center;
 }
 
 .todo-item {
@@ -41,6 +45,17 @@ body {
   width: 80%;
 }
 
+.todo-text>input {
+  background-color: white;
+  border: 0px;
+}
+
+.todo-instructions {
+  padding-top: 0.4em;
+  font-size: 0.6em;
+  color: red;
+}
+
 .todo-remove {
   padding: 1em;
   width: 20%;
@@ -50,4 +65,28 @@ body {
 .weather {
   margin: 3em 3em 0 0;
   border: 1px solid red;
+}
+
+.add-todo {
+  margin: 0 0 3em 3em;
+  border: 1px solid green;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+}
+
+.add-input {
+  width: 80%;
+  padding: 1em;
+}
+
+.add-input>input {
+  width: 100%;
+}
+
+.add-btn {
+  display: inline;
+  padding: 1em;
+  width: 20%;
+  text-align: center;
 }
