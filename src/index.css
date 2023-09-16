@@ -1,13 +1,53 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0px;
+  margin: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mainWindow {
+  border: 1px solid black;
+  margin: 2%;
+  display: grid;
+  gap: 2%;
+  grid-template-columns: 63% 35%;
+}
+
+.todos-list {
+  margin: 3em 0 3em 3em;
+  border: 1px solid blue;
+}
+
+.add-todo {
+  margin: 0 0 3em 3em;
+  border: 1px solid green;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.todo-item {
+  border: 1px solid saddlebrown;
+  margin: 1em;
+  display: flex;
+  width: 95%;
+}
+
+.todo-item>div {
+  display: inline;
+}
+
+.todo-text {
+  border: 1px solid skyblue;
+  padding: 1em;
+  flex-grow: 2;
+  width: 80%;
+}
+
+.todo-remove {
+  padding: 1em;
+  width: 20%;
+  text-align: center;
+}
+
+.weather {
+  margin: 3em 3em 0 0;
+  border: 1px solid red;
 }
