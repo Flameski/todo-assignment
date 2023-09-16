@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import { MdHighlightOff } from 'react-icons/md';
 
 interface ITodoItemProps {
 	id: string;
@@ -54,6 +55,7 @@ const TodoItem: React.FC<ITodoItemProps> = ({
 					value={tempText}
 					onChange={changeTodoText}
 					onKeyDown={updateTodo}
+					maxLength={70}
 				/>
 				{editing && (
 					<div className='todo-instructions'>
@@ -67,7 +69,7 @@ const TodoItem: React.FC<ITodoItemProps> = ({
 					removeFn(id);
 				}}
 			>
-				X
+				<MdHighlightOff />
 			</div>
 		</article>
 	);
